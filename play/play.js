@@ -17,9 +17,9 @@ function email(name, domain = "scottlogic.co.uk") {
   console.log(`Send mail to ${name}@${domain}`)
 }
 
-pt()
-email("imaxwell")
-email("straightedgescotsman", "gmail.com")
+// pt()
+// email("imaxwell")
+// email("straightedgescotsman", "gmail.com")
 
 let sum = (input1, input2) => input1 + input2
 alert(sum(6,9))
