@@ -95,21 +95,37 @@ admin.g();
 admin['g']();
 
 
-// Object Methods Exercise
-let calculator = {
-  read() {
+// Object Methods Exercise 1
+function Calculator() {
+  this.read = function() {
     this.first = +prompt("Give ye the first:")
     this.second = +prompt("Give ye the second:")
   },
-  sum() {
+  this.sum = function() {
     return this.first + this.second;
   },
-  mul() {
+  this.mul = function() {
     return this.first * this.second;
   }
-
 };
 
+let calculator = new Calculator();
 calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );
+
+
+
+//Constructor exercise
+function Accumulator(seed){
+  this.value = seed,
+  this.read = function() {
+    this.value += +prompt("New Value?", 0)
+  }
+
+}
+
+let accumulator = new Accumulator(1); // initial value 1
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+alert(accumulator.value); // shows the sum of these values
