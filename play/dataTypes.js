@@ -10,7 +10,7 @@ let salaries = {
 function topSalary(salaries) {
 
   let max = 0;
-  lat maxName = null;
+  let maxName = null;
 
   for (let [name, salary] of Object.entries(salaries)) {
     if (max < salary) {
@@ -19,9 +19,6 @@ function topSalary(salaries) {
     }
   }
 }
-
-
-
 
 let num = 0b10101010
 alert( num.toString(2) );
@@ -76,7 +73,7 @@ styles.unshift("Rap", "Reggae");
 
 
 function sumInput() {
-  let arr = [], input;
+  let numbers = [], input;
 
   while (true) {
 
@@ -89,7 +86,7 @@ function sumInput() {
   }
 
   let total = 0;
-  for (let x of arr) {
+  for (let x of numbers) {
     total += x
   }
   return total
