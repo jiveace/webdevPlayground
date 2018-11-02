@@ -2,15 +2,12 @@ import createStudent from "./student";
 import * as utils from "./student-utils";
 import studentService from "./student-service";
 
-// * Commenting out because dedicated mock file removes the need.
 // Optional second parameter
-// jest.mock("./student-service", () => ({
-//   get() {
-//     return Promise.resolve("Yay");
-//   }
-// }));
-
-jest.mock("./student-service");
+jest.mock("./student-service", () => ({
+  get() {
+    return Promise.resolve("Yay");
+  }
+}));
 
 describe("Student", () => {
   const spy = jest.spyOn(utils, "validateStudent");
@@ -47,6 +44,6 @@ describe("student.fetch", () => {
   it("returns data", async () => {
     const student = createStudent(1, "");
     const data = await student.fetch();
-    expect(data).toBe(1);
+    expect(data).toBe("Yay");
   });
 });
