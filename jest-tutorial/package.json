@@ -1,0 +1,11 @@
+{
+  "name": "jest-tutorial",
+  "version": "1.0.0",
+  "description": "\u001b[A\u001b[BToy project to play with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiveace",
+  "license": "ISC"
+}
