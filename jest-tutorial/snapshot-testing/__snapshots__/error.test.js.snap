@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getErrorMessage returns message for a valid code 1`] = `"Oh Sphinx of black quartz, judge my vow"`;
+
+exports[`getErrorMessage returns message for a valid code 2`] = `"Rabbits don't eat carrots"`;
+
+exports[`getErrorMessage returns message for a valid code 3`] = `"Cats don't eat mouses"`;
+
+exports[`getErrorMessage throws an error otherwise 1`] = `"No error messages for that code"`;
